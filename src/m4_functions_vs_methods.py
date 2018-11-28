@@ -178,8 +178,32 @@ def try_functions():
 ###############################################################################
 # IMPORTANT: Read the NOTE below before you try to implement the next function!
 ###############################################################################
+
 def try_methods_and_functions():
-    speedoTurtle 
+    speedoTurtle = rg.SimpleTurtle('turtle')
+    speedoTurtle.pen = rg.Pen('blue', 5)
+
+    speedoTurtle.backward(150)
+
+    speedoTurtle.speed = 1
+    draw_many_squares(speedoTurtle, 2, 100, 30)
+
+    speedoTurtle.speed = 5
+    speedoTurtle.pen = rg.Pen('red', 5)
+    draw_many_squares(speedoTurtle, 10, 50, 15)
+
+    speedoTurtle.speed = 100
+    speedoTurtle.pen = rg.Pen('red', 35)
+    draw_many_squares(speedoTurtle, 8, 300, 60)
+
+    speedoTurtle.pen = rg.Pen('black', 3)
+
+    speedoTurtle.backward(200)
+
+    speedoTurtle.draw_circle(30)
+
+    speedoTurtle.draw_square(50)
+
     """
     Constructs a SimpleTurtle and sets its   pen  to a new rg.Pen
     that is 'blue' with thickness 5.
@@ -212,7 +236,7 @@ def try_methods_and_functions():
       8. Draw a SQUARE whose sides are each of length 50.
     """
     ###########################################################################
-    # TODO: 6. Implement and test this function, per its doc-string above.
+    # DONE: 6. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     #
     #   NOTE: This function should ** CALL ** the
